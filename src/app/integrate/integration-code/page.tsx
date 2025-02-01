@@ -51,7 +51,7 @@ const IntegrationCodeTabs = () => {
           <Button
             size="sm"
             variant="ghost"
-            className="absolute top-2 right-2"
+            className="absolute md:top-2 bottom-2 right-2"
             onClick={handleCopyCode}
           >
             {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}

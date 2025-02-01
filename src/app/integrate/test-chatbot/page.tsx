@@ -49,7 +49,7 @@ export default function TestChatbotPage() {
                     </div>
 
                     {/* Chatbot */}
-                    <div className="absolute bottom-6 right-6 flex flex-col items-end gap-3">
+                    <div className="absolute md:bottom-6 md:right-6 flex md:flex-col flex-col-reverse md:items-end items-center gap-3 mx-4">
                         <div className="group relative">
                             <Link
                                 href="https://beyondchats.com/contact-us/"
