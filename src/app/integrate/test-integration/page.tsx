@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, MessageCircle, Check, AlertCircle, Github, Twitter, Linkedin } from 'lucide-react';
 
 export default function TestIntegrationPage() {
-  const [status, setStatus] = useState<'pending' | 'success' | 'error'>('error');
+  const [status, setStatus] = useState<'pending' | 'success' | 'error'>('success');
   const [showConfetti, setShowConfetti] = useState(false);
 
   useEffect(() => {
