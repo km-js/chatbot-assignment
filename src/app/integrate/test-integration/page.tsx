@@ -24,8 +24,8 @@ export default function TestIntegrationPage() {
   const runTest = () => {
     setStatus('pending');
     setTimeout(() => {
-      // Simulate 80% success rate
-      Math.random() < 0.8 ? setStatus('success') : setStatus('error');
+      // Simulate 99% success rate
+      Math.random() < 0.99 ? setStatus('success') : setStatus('error');
     }, 2000);
   };
 

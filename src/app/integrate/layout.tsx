@@ -9,7 +9,6 @@ import { MessageCircle, Code, ExternalLink } from 'lucide-react';
 export default function Layout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
-
   const tabs = [
     {
       href: '/integrate/test-chatbot',
@@ -27,6 +26,10 @@ export default function Layout({ children }: { children: ReactNode }) {
       label: 'Test Integration'
     }
   ];
+
+  function cn(...classes: (string | undefined | false)[]): string {
+    return classes.filter(Boolean).join(' ');
+  }
 
   return (
     <div className="max-w-6xl mx-auto p-4 space-y-6">
@@ -61,6 +64,4 @@ export default function Layout({ children }: { children: ReactNode }) {
   );
 }
 
-export function cn(...classes: (string | boolean | undefined)[]) {
-  return classes.filter(Boolean).join(' ');
-}
+
